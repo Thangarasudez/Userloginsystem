@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background: #fff;
+  color: #10b98f;
+  padding: 0 50px;
+}
+.logo {
+  width: 200px;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+}
+.signUp,
+.login {
+  text-decoration: none;
+  color: #10b98f;
+  border-radius: 40px;
+  border: 2px solid #10b98f;
+  font-size: 20px;
+  padding: 10px 25px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.signUp:hover,
+.login:hover {
+  color: #fff;
+  background-color: #10b98f;
+}
+.mobile-menu-icon {
+  display: none;
+}
+.mobile-menu-icon i {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 780px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #fff;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    border-top: 2px solid #10b98f;
+  }
+  .nav-links-mobile li {
+    color: #10b98f;
+    text-align: center;
+  }
+  .signUp,
+  .login {
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    background-color: #10b98f;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
+}
