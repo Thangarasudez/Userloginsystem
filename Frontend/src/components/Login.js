@@ -32,39 +32,6 @@ const Login = () => {
   };
   return (
     <div>
-      {/* <form onSubmit={handleSubmit}>
-        <Box
-          marginLeft="auto"
-          marginRight="auto"
-          width={300}
-          dispay="flex"
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Typography variant="h2">Login</Typography>
-          <TextField
-            name="email"
-            onChange={handleChange}
-            value={inputs.email}
-            variant="outlined"
-            placeholder="Email"
-            margin="normal"
-          />
-          <TextField
-            name="password"
-            onChange={handleChange}
-            value={inputs.password}
-            variant="outlined"
-            placeholder="Password"
-            margin="normal"
-          />
-          <br />
-          <Button variant="contained" type="submit">
-            Login
-          </Button>
-        </Box>
-      </form> */}
       <div className="wrapper">
         <div className="title">Login</div>
         <form className="form" onSubmit={handleSubmit}>
